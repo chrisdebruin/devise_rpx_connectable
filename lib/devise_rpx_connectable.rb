@@ -16,6 +16,13 @@ module Devise
   
   mattr_accessor :rpx_application_name
   @@rpx_application_name = nil
+  
+  mattr_accessor :rpx_additional_user_data
+  @@rpx_additional_user_data = []
+
+  mattr_accessor :rpx_extended_user_data
+  @@rpx_extended_user_data = false
+  
 end
 
 I18n.load_path.unshift File.join(File.dirname(__FILE__), *%w[devise_rpx_connectable locales en.yml])

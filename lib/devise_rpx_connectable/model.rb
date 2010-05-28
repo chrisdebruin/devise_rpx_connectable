@@ -115,7 +115,9 @@ module Devise #:nodoc:
         #
         ::Devise::Models.config(self,
         :rpx_identifier_field,
-        :rpx_auto_create_account
+        :rpx_auto_create_account,
+        :rpx_additional_user_data,
+        :rpx_extended_user_data
         )
 
         # Alias don't work for some reason, so...a more Ruby-ish alias
